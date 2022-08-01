@@ -22,6 +22,12 @@ struct CellConstants {
         //return min(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
         return UIScreen.main.bounds.width
     }
+    
+    static var repoDescriptionTextWidth: CGFloat {
+        get{
+            return UIScreen.main.bounds.width - descriptionTextInsets.left - descriptionTextInsets.right
+        }
+    }
     // basic insets data for description text, like repo description, offsets from edges by X, bottom offset is not used
     static let descriptionTextInsets = UIEdgeInsets(top: 98, left: 16, bottom: 777, right: 16)
 }

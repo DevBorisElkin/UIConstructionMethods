@@ -27,8 +27,8 @@ class TableViewContentsViewModel {
             size: CGSize.zero)
         
         if !selectedRepo.repoDescription.isEmpty{
-            let width = CellConstants.getScreenWidth() - CellConstants.descriptionTextInsets.left - CellConstants.descriptionTextInsets.right
-            let height = selectedRepo.repoDescription.height(width: CellConstants.getScreenWidth(), font: CellConstants.postLabelFont)
+            let width = CellConstants.repoDescriptionTextWidth
+            let height = selectedRepo.repoDescription.height(width: width, font: CellConstants.postLabelFont)
             
             repoDescriptionFrame.size = CGSize(width: width, height: height)
         }

@@ -13,6 +13,8 @@ class RegularTableViewCell: UITableViewCell {
     @IBOutlet weak var repoOwner: UILabel!
     @IBOutlet weak var repoDescription: UILabel!
     
+    static let cellIdentifier = "repoRegularCell"
+    
     func setUp(viewModel: RepositoryCellViewModel){
         repoName.text = viewModel.repo.repoName
         repoOwner.text = viewModel.repo.repoOwner

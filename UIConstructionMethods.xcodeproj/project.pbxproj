@@ -25,6 +25,8 @@
 		527F66DD28982FF6004A17B5 /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66DC28982FF6004A17B5 /* RepositoryCellViewModel.swift */; };
 		527F66DF2898308E004A17B5 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66DE2898308E004A17B5 /* CellConstants.swift */; };
 		527F66E128983315004A17B5 /* TextHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66E028983315004A17B5 /* TextHeightCalculator.swift */; };
+		527F66E5289858F3004A17B5 /* XibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66E3289858F3004A17B5 /* XibTableViewCell.swift */; };
+		527F66E828985923004A17B5 /* XibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527F66E728985923004A17B5 /* XibTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		527F66DC28982FF6004A17B5 /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
 		527F66DE2898308E004A17B5 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
 		527F66E028983315004A17B5 /* TextHeightCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeightCalculator.swift; sourceTree = "<group>"; };
+		527F66E3289858F3004A17B5 /* XibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibTableViewCell.swift; sourceTree = "<group>"; };
+		527F66E728985923004A17B5 /* XibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				527F66CD28980DE2004A17B5 /* SecondaryViewControllers */,
 				527F66B228980830004A17B5 /* MainViewController.swift */,
 				527F66D928981467004A17B5 /* 1_RegularTableView */,
+				527F66E22898581B004A17B5 /* 2_TableViewWithXib */,
 				527F66B728980832004A17B5 /* Assets.xcassets */,
 				527F66BC28980832004A17B5 /* Info.plist */,
 			);
@@ -144,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				527F66D62898113D004A17B5 /* PreparedTableViewController */,
-				527F66D028980E45004A17B5 /* TableViewWithXibViewController.swift */,
 				527F66D228980E5A004A17B5 /* TableViewWithCodeViewController.swift */,
 			);
 			path = SecondaryViewControllers;
@@ -165,6 +169,16 @@
 				527F66DA2898148F004A17B5 /* RegularTableViewCell.swift */,
 			);
 			path = 1_RegularTableView;
+			sourceTree = "<group>";
+		};
+		527F66E22898581B004A17B5 /* 2_TableViewWithXib */ = {
+			isa = PBXGroup;
+			children = (
+				527F66D028980E45004A17B5 /* TableViewWithXibViewController.swift */,
+				527F66E3289858F3004A17B5 /* XibTableViewCell.swift */,
+				527F66E728985923004A17B5 /* XibTableViewCell.xib */,
+			);
+			path = 2_TableViewWithXib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +242,7 @@
 				527F66BB28980832004A17B5 /* LaunchScreen.storyboard in Resources */,
 				527F66B828980832004A17B5 /* Assets.xcassets in Resources */,
 				527F66B628980830004A17B5 /* Main.storyboard in Resources */,
+				527F66E828985923004A17B5 /* XibTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +260,7 @@
 				527F66DD28982FF6004A17B5 /* RepositoryCellViewModel.swift in Sources */,
 				527F66D328980E5A004A17B5 /* TableViewWithCodeViewController.swift in Sources */,
 				527F66CF28980E18004A17B5 /* RegularViewController.swift in Sources */,
+				527F66E5289858F3004A17B5 /* XibTableViewCell.swift in Sources */,
 				527F66B328980830004A17B5 /* MainViewController.swift in Sources */,
 				527F66C928980B35004A17B5 /* Repository.swift in Sources */,
 				527F66AF28980830004A17B5 /* AppDelegate.swift in Sources */,
