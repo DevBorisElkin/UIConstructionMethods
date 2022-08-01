@@ -27,6 +27,7 @@
 		527F66E128983315004A17B5 /* TextHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66E028983315004A17B5 /* TextHeightCalculator.swift */; };
 		527F66E5289858F3004A17B5 /* XibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66E3289858F3004A17B5 /* XibTableViewCell.swift */; };
 		527F66E828985923004A17B5 /* XibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527F66E728985923004A17B5 /* XibTableViewCell.xib */; };
+		527F66EB289865ED004A17B5 /* CodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F66EA289865ED004A17B5 /* CodeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		527F66E028983315004A17B5 /* TextHeightCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeightCalculator.swift; sourceTree = "<group>"; };
 		527F66E3289858F3004A17B5 /* XibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibTableViewCell.swift; sourceTree = "<group>"; };
 		527F66E728985923004A17B5 /* XibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTableViewCell.xib; sourceTree = "<group>"; };
+		527F66EA289865ED004A17B5 /* CodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				527F66B228980830004A17B5 /* MainViewController.swift */,
 				527F66D928981467004A17B5 /* 1_RegularTableView */,
 				527F66E22898581B004A17B5 /* 2_TableViewWithXib */,
+				527F66E9289865B5004A17B5 /* 3_TableViewWithCode */,
 				527F66B728980832004A17B5 /* Assets.xcassets */,
 				527F66BC28980832004A17B5 /* Info.plist */,
 			);
@@ -149,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				527F66D62898113D004A17B5 /* PreparedTableViewController */,
-				527F66D228980E5A004A17B5 /* TableViewWithCodeViewController.swift */,
 			);
 			path = SecondaryViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +181,15 @@
 				527F66E728985923004A17B5 /* XibTableViewCell.xib */,
 			);
 			path = 2_TableViewWithXib;
+			sourceTree = "<group>";
+		};
+		527F66E9289865B5004A17B5 /* 3_TableViewWithCode */ = {
+			isa = PBXGroup;
+			children = (
+				527F66D228980E5A004A17B5 /* TableViewWithCodeViewController.swift */,
+				527F66EA289865ED004A17B5 /* CodeTableViewCell.swift */,
+			);
+			path = 3_TableViewWithCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				527F66AF28980830004A17B5 /* AppDelegate.swift in Sources */,
 				527F66B128980830004A17B5 /* SceneDelegate.swift in Sources */,
 				527F66DB2898148F004A17B5 /* RegularTableViewCell.swift in Sources */,
+				527F66EB289865ED004A17B5 /* CodeTableViewCell.swift in Sources */,
 				527F66E128983315004A17B5 /* TextHeightCalculator.swift in Sources */,
 				527F66CC28980BAC004A17B5 /* MainViewModel.swift in Sources */,
 				527F66DF2898308E004A17B5 /* CellConstants.swift in Sources */,
