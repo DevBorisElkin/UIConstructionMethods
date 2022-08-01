@@ -16,14 +16,21 @@ extension RegularViewController : UITableViewDelegate, UITableViewDataSource {
         return viewModel.repos.count
     }
     
+    // TODO
+    // 1) work with description CGRect
+    // 2) work with height of each item
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "repoRegularCell", for: indexPath) as! RegularTableViewCell
-        cell.setUp(repo: viewModel.repos[indexPath.row])
+        
+        var cellViewModel = viewModel.repoCellViewModel(indexPath: indexPath)
+        
+        cell.setUp(viewModel: cellViewModel)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        var cellViewModel = viewModel.repoCellViewModel(indexPath: indexPath)
+        return cellViewModel.cellHeight
     }
     
 }

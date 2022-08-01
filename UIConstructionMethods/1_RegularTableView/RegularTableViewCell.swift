@@ -13,10 +13,11 @@ class RegularTableViewCell: UITableViewCell {
     @IBOutlet weak var repoOwner: UILabel!
     @IBOutlet weak var repoDescription: UILabel!
     
-    func setUp(repo: Repository){
-        repoName.text = repo.repoName
-        repoOwner.text = repo.repoOwner
-        repoDescription.text = repo.repoDescription
+    func setUp(viewModel: RepositoryCellViewModel){
+        repoName.text = viewModel.repo.repoName
+        repoOwner.text = viewModel.repo.repoOwner
+        repoDescription.text = viewModel.repo.repoDescription
+        
+        repoDescription.frame = viewModel.repoDescriptionFrame
     }
-
 }
