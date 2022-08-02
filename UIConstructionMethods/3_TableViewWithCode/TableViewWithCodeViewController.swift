@@ -14,8 +14,25 @@ class TableViewWithCodeViewController: PreparedTableViewController {
         
         print("Opened TableViewWithCodeViewController")
         
-        // TODO create table view and register cell (code file and identifier)
+        view.backgroundColor = .blue
+        
+        view.addSubview(tableView)
+        tableView.fillSuperview()
+
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        tableView.register(CodeTableViewCell.self, forCellReuseIdentifier: CodeTableViewCell.cellIdentifier)
+        
+        
     }
+    
+    var tableView: UITableView = {
+        let view = UITableView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .red
+        return view
+    }()
 }
 
 extension TableViewWithCodeViewController : UITableViewDelegate, UITableViewDataSource {
@@ -24,7 +41,7 @@ extension TableViewWithCodeViewController : UITableViewDelegate, UITableViewData
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: XibTableViewCell.cellIdentifier, for: indexPath) as! CodeTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: CodeTableViewCell.cellIdentifier, for: indexPath) as! CodeTableViewCell
         
         var cellViewModel = viewModel.repoCellViewModel(indexPath: indexPath)
         
