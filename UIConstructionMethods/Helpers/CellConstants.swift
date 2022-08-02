@@ -31,3 +31,9 @@ struct CellConstants {
     // basic insets data for description text, like repo description, offsets from edges by X, bottom offset is not used
     static let descriptionTextInsets = UIEdgeInsets(top: 98, left: 16, bottom: 777, right: 16)
 }
+
+struct CodableTableViewConstants {
+    static let repoNameFrame = CGRect(x: 24, y: 17, width: 472, height: 21)
+    static let repoOwnerNameFrame = CGRect(x: 24, y: 51, width: 472, height: 21)
+
+}
